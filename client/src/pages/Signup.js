@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useSignup } from "../hooks/useSignup"
 
 const Signup = () => {
+  const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const {signup, error, isLoading} = useSignup()
@@ -15,7 +16,12 @@ const Signup = () => {
   return (
     <form className="signup" onSubmit={handleSubmit}>
       <h3>Sign Up</h3>
-      
+      <label>User Name:</label>
+      <input 
+        type="text" 
+        onChange={(e) => setUsername(e.target.value)} 
+        value={username} 
+      />
       <label>Email address:</label>
       <input 
         type="email" 
