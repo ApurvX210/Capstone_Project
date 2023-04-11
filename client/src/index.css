@@ -124,3 +124,21 @@ form.signup, form.login {
     background-color: rgba(0, 0, 0,0.7 );
     z-index:1;
 } */
+.socialIcons {
+  text-align: center;
+  margin: 10px;
+}
+h5{
+  font-weight: lighter;
+}
+.google{
+  cursor: pointer;
+}
+.but{
+  padding: 2%;
+  width: 100px;
+}
+.blue-link{
+  text-decoration: none;
+  color: #333;
+}
